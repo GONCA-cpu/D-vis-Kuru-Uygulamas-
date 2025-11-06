@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Kuru Uygulaması</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style d.css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            
+            <div class="header-wrapper">
+                <h4 style="color:rgba(0, 4, 255, 0.822)">DÖVİZ KURU ÇEVİRİCİ</h4>
+            </div>
+
+            <div class="content-wrapper">
+                <input id="amount" type="number" placeholder="Miktar"/>
+
+                <select id="firstCurrencyOption">
+                    <option selected>USD</option>
+                    <option>EUR</option>
+                    <option>TRY</option>
+                    <option>JPY</option>
+                    <option>RUB</option>
+                    <option>SEK</option>
+                </select>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <select id="secondCurrencyOption">
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option selected>TRY</option>
+                    <option>JPY</option>
+                    <option>RUB</option>
+                    <option>SEK</option>
+                </select>
+
+                <input type="number" id="result" readonly placeholder="Sonuç"/>
+
+                <span>Copyright - Gonca Yeşil</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Dosyaları -->
+    <script src="currency.js"></script>
+    <script src="maind.js"></script>
+</body>
+</html>
